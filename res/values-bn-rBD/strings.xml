@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="webviewchromium_private_browsing_warning">এই কার্যকারিতাটি Android এর এই সংস্করণে সমর্থিত নয়।</string>
+</resources>

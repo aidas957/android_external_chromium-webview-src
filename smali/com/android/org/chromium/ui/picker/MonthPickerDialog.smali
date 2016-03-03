@@ -1,0 +1,50 @@
+.class public Lcom/android/org/chromium/ui/picker/MonthPickerDialog;
+.super Lcom/android/org/chromium/ui/picker/TwoFieldDatePickerDialog;
+.source "MonthPickerDialog.java"
+
+
+# direct methods
+.method public constructor <init>(Landroid/content/Context;Lcom/android/org/chromium/ui/picker/TwoFieldDatePickerDialog$OnValueSetListener;IIDD)V
+    .locals 1
+    .param p1, "context"    # Landroid/content/Context;
+    .param p2, "callBack"    # Lcom/android/org/chromium/ui/picker/TwoFieldDatePickerDialog$OnValueSetListener;
+    .param p3, "year"    # I
+    .param p4, "monthOfYear"    # I
+    .param p5, "minMonth"    # D
+    .param p7, "maxMonth"    # D
+
+    .prologue
+    .line 21
+    invoke-direct/range {p0 .. p8}, Lcom/android/org/chromium/ui/picker/TwoFieldDatePickerDialog;-><init>(Landroid/content/Context;Lcom/android/org/chromium/ui/picker/TwoFieldDatePickerDialog$OnValueSetListener;IIDD)V
+
+    .line 22
+    sget v0, Lcom/android/org/chromium/ui/R$string;->month_picker_dialog_title:I
+
+    invoke-virtual {p0, v0}, Lcom/android/org/chromium/ui/picker/MonthPickerDialog;->setTitle(I)V
+
+    .line 23
+    return-void
+.end method
+
+
+# virtual methods
+.method protected createPicker(Landroid/content/Context;DD)Lcom/android/org/chromium/ui/picker/TwoFieldDatePicker;
+    .locals 6
+    .param p1, "context"    # Landroid/content/Context;
+    .param p2, "minValue"    # D
+    .param p4, "maxValue"    # D
+
+    .prologue
+    .line 27
+    new-instance v0, Lcom/android/org/chromium/ui/picker/MonthPicker;
+
+    move-object v1, p1
+
+    move-wide v2, p2
+
+    move-wide v4, p4
+
+    invoke-direct/range {v0 .. v5}, Lcom/android/org/chromium/ui/picker/MonthPicker;-><init>(Landroid/content/Context;DD)V
+
+    return-object v0
+.end method

@@ -1,0 +1,33 @@
+.class interface abstract Lcom/android/org/chromium/content/browser/ServiceRegistry$ImplementationFactory;
+.super Ljava/lang/Object;
+.source "ServiceRegistry.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/android/org/chromium/content/browser/ServiceRegistry;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x608
+    name = "ImplementationFactory"
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "<I::",
+        "Lcom/android/org/chromium/mojo/bindings/Interface;",
+        ">",
+        "Ljava/lang/Object;"
+    }
+.end annotation
+
+
+# virtual methods
+.method public abstract createImpl()Lcom/android/org/chromium/mojo/bindings/Interface;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()TI;"
+        }
+    .end annotation
+.end method

@@ -1,0 +1,18 @@
+version: 2.0.3
+apkFileName: webview.apk
+isFrameworkApk: true
+usesFramework:
+  ids:
+  - 1
+sdkInfo:
+  minSdkVersion: '21'
+  targetSdkVersion: '21'
+packageInfo:
+  forced-package-id: '2'
+versionInfo:
+  versionCode: '400001'
+  versionName: 40 (1808730-arm)
+sharedLibrary: true
+doNotCompress:
+- arsc
+- pak

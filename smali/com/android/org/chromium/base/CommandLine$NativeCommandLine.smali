@@ -1,0 +1,92 @@
+.class Lcom/android/org/chromium/base/CommandLine$NativeCommandLine;
+.super Lcom/android/org/chromium/base/CommandLine;
+.source "CommandLine.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/android/org/chromium/base/CommandLine;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0xa
+    name = "NativeCommandLine"
+.end annotation
+
+
+# direct methods
+.method private constructor <init>()V
+    .locals 1
+
+    .prologue
+    .line 341
+    const/4 v0, 0x0
+
+    invoke-direct {p0, v0}, Lcom/android/org/chromium/base/CommandLine;-><init>(Lcom/android/org/chromium/base/CommandLine$1;)V
+
+    return-void
+.end method
+
+.method synthetic constructor <init>(Lcom/android/org/chromium/base/CommandLine$1;)V
+    .locals 0
+    .param p1, "x0"    # Lcom/android/org/chromium/base/CommandLine$1;
+
+    .prologue
+    .line 341
+    invoke-direct {p0}, Lcom/android/org/chromium/base/CommandLine$NativeCommandLine;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public appendSwitch(Ljava/lang/String;)V
+    .locals 0
+    .param p1, "switchString"    # Ljava/lang/String;
+
+    .prologue
+    .line 354
+    # invokes: Lcom/android/org/chromium/base/CommandLine;->nativeAppendSwitch(Ljava/lang/String;)V
+    invoke-static {p1}, Lcom/android/org/chromium/base/CommandLine;->access$500(Ljava/lang/String;)V
+
+    .line 355
+    return-void
+.end method
+
+.method public getSwitchValue(Ljava/lang/String;)Ljava/lang/String;
+    .locals 1
+    .param p1, "switchString"    # Ljava/lang/String;
+
+    .prologue
+    .line 349
+    # invokes: Lcom/android/org/chromium/base/CommandLine;->nativeGetSwitchValue(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p1}, Lcom/android/org/chromium/base/CommandLine;->access$400(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public hasSwitch(Ljava/lang/String;)Z
+    .locals 1
+    .param p1, "switchString"    # Ljava/lang/String;
+
+    .prologue
+    .line 344
+    # invokes: Lcom/android/org/chromium/base/CommandLine;->nativeHasSwitch(Ljava/lang/String;)Z
+    invoke-static {p1}, Lcom/android/org/chromium/base/CommandLine;->access$300(Ljava/lang/String;)Z
+
+    move-result v0
+
+    return v0
+.end method
+
+.method public isNativeImplementation()Z
+    .locals 1
+
+    .prologue
+    .line 369
+    const/4 v0, 0x1
+
+    return v0
+.end method
